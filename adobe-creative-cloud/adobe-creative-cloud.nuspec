@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>adobe-creative-cloud</id>
+    <version>4.6.1.393</version>
+    <title>Adobe Creative Cloud</title>
+    <authors>Adobe</authors>
+    <owners>ITIGO AG, sbaerlocher</owners>
+    <licenseUrl>http://www.adobe.com/legal/general-terms.html</licenseUrl>
+    <projectUrl>http://creative.adobe.com</projectUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Adobe_Creative_Cloud_CC_icon.svg/1200px-Adobe_Creative_Cloud_CC_icon.svg.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><![CDATA[
+Creative Cloud for desktop is a great place to start any creative project. Quickly launch and update your desktop apps; manage and share your assets stored in Creative Cloud; download fonts from Adobe Typekit or high-quality royalty-free assets right within the app; and showcase and discover creative work on Behance. Best of all, the application stays out of your way but is there when you need it, so you can focus on creativity.
+
+## Package Parameters
+
+* `/RemoveDesktopIcons` Removes the desktop icon from Adobe Acrobat Reader DC.
+* `/NoAutostartHard` Disables the Adobe Creative Cloud in the Autostart menu.
+]]></description>
+    <summary>Adobe Creative Cloud Client Installer for installing creative cloud subscription applications</summary>
+    <releaseNotes />
+    <copyright>Adobe</copyright>
+    <tags>Adobe Creative Cloud</tags>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>

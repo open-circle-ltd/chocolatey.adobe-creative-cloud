@@ -1,41 +1,31 @@
-# Chocolatey: Adobe Creative Cloud
+# Chocolatey Package: Adobe Creative Cloud
 
 ## Description
 
-Adobe Creative Cloud Client Installer for installing creative cloud subscription applications.
+Creative Cloud for desktop is a great place to start any creative project. Quickly launch and update your desktop apps; manage and share your assets stored in Creative Cloud; download fonts from Adobe Typekit or high-quality royalty-free assets right within the app; and showcase and discover creative work on Behance. Best of all, the application stays out of your way but is there when you need it, so you can focus on creativity.
 
 ## Package Parameters
 
-| Parameter            | Default     | Comments                                   |
-| :---                 | :---        | :---                                       |
-| /NOAUTOSTARTHARD | | Disables the Adobe Creative Cloud in the Autostart menu. |
+* `/RemoveDesktopIcons` Removes the desktop icon from Adobe Acrobat Reader DC.
+* `/NoAutostartHard` Disables the Adobe Creative Cloud in the Autostart menu.
 
 ## Installation
-
-The package is created as follows.
-
-```ps1
-choco pack adobe-creative-cloud.nuspec --outputdirectory build
-```
 
 installation without parameters.
 
 ```ps1
- choco install adobe-creative-cloud -s="<path to folder>\build"
+ choco install adobe-creative-cloud
 ```
 
 installation with parameters.
 
 ```ps1
- choco install adobe-creative-cloud --params="'/NOAUTOSTARTHARD'" -s="<path to folder>\build"
+ choco install adobe-creative-cloud --params="'/NoAutostartHard /RemoveDesktopIcons'"
 ```
 
-## Changelog
+## Disclaimer
 
-### 4.6.0.384
-
-* inital commit
-* add new version from Adobe Creative Cloud
+These Chocolatey Packages only contain installation routines. The software itself is downloaded from the official sources of the software developer. ITIGO AG has no affilation with the software developer.
 
 ## Author
 
@@ -44,9 +34,8 @@ installation with parameters.
 
 ## License
 
-This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/licence) file for the full license text.
+This project is under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
 
 ## Copyright
 
-(c) 2018, Simon Bärlocher
 (c) 2018, ITIGO AG

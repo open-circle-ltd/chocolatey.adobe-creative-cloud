@@ -5,7 +5,7 @@ $ErrorActionPreference = 'Stop';
 $PackageParameters = Get-PackageParameters
 
 $toolsDir            = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$checksumPackage     = '42afc3773dc4bb0c7166b6baf896f99a75ce4ec049d906f7b9ad21dd88c81197dd070a98ad8c9658f22c23623e50679f09ec4cb83fdc9c1d773997cea6224641'
+$checksumPackage = "42afc3773dc4bb0c7166b6baf896f99a75ce4ec049d906f7b9ad21dd88c81197dd070a98ad8c9658f22c23623e50679f09ec4cb83fdc9c1d773997cea6224641"
 $checksumTypePackage = 'SHA512'
 
 Import-Module -Name "$($toolsDir)\helpers.ps1"

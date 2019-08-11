@@ -13,6 +13,8 @@ Creative Cloud for desktop is a great place to start any creative project. Quick
 
 ## Installation
 
+### choco
+
 installation without parameters.
 
 ```ps1
@@ -23,6 +25,25 @@ installation with parameters.
 
 ```ps1
  choco install adobe-creative-cloud --params="'/NoAutostartHard /RemoveDesktopIcons'"
+```
+
+### [ITIGO Packages](https://github.com/itigoag/ansible.packages)
+
+installation without parameters.
+
+```yml
+packages:
+  'adobe-creative-cloud':
+    version: latest
+```
+
+installation with parameters.
+
+```yml
+packages:
+  'adobe-creative-cloud':
+    version: latest
+    params: "'/NoAutostartHard /RemoveDesktopIcons'"
 ```
 
 ## Disclaimer

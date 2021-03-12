@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adobe-creative-cloud</id>
-    <version>5.4.1.534</version>
+    <version>5.4.2.540</version>
     <title>Adobe Creative Cloud</title>
     <authors>Adobe</authors>
     <owners>ITIGO AG, sbaerlocher</owners>
